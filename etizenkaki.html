@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/etizenyaki.css">
+    <style>
+        /* スタイルシート */
+        .responsive-image {
+            width: 20vw;
+            height: 42vh; /* サムネイルの初期幅 */
+            transition: width 0.3s ease; /* アニメーション効果を追加 */
+        }
+
+        .responsive-image:hover {
+            width: 22vw; /* マウスオーバー時の幅 */
+            height: 44vh;
+        }
+    </style>
+</head>
+
+<body>
+        <header>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <nav class="menu">
+                <ul>
+                  <li id="menu-list"><a href="./index.html">back</a></li>
+                  <li><a href="./etizenkaki.html">Japanese</a></li>
+                  <li><a href="./越前焼en.html">English</a></li>
+                </ul>
+            </nav>
+            <scrip src="script.js"></script>
+        </header>
+        <header id="header">
+            <h1>otonarisan</h1>
+        </header>
+    <main>
+        <section id="section1">
+            <h1 id="section1-h1">越前焼/Etizen</h1>
+    
+            <p id="section1-p2">越前焼は福井県丹生郡越前町の主に宮崎地区・織田地区で焼かれる炻器です。<br>
+                鉄分の多い土を使い、肌色は黒灰色から赤褐色まで変化し、黄緑色の自然釉が流れ落ちる美しさが特徴です。
+            </p>
+        </section>
+
+        
+        
+
+        <section id="section2">
+
+
+            
+            
+                
+
+
+            <div class="goods">
+                <div id="image-container">
+                    <img class="responsive-image" id="margin-img" src="./assets/img/越前焼6.jpeg" alt="">
+                </div>
+                
+            </div>
+
+            <div class="goods">
+                <div id="image-container">
+                    <img class="responsive-image" src="./assets/img/越前焼1.jpeg" alt="">
+                </div>
+                
+            </div>
+
+            
+            
+            <div class="goods">
+                <div id="image-container">
+                    <img class="responsive-image" src="./assets/img/越前焼3.jpeg" alt="">
+                </div>
+                
+            </div>
+
+        
+  
+            <div class="goods">
+                <div id="image-container">
+                    <img class="responsive-image" id="margin" src="./assets/img/越前焼4.jpeg" alt="">
+                </div>
+                <!-- <ul class="section2-ul">
+                    <li>Price</li>
+                    <li>Type：信楽焼</li>
+                    <li>Material：炻器</li>
+                    <li>Aria:滋賀県</li>
+                </ul> -->
+            </div>
+
+            
+
+        </section>
+            <script>
+                // JavaScriptで全ての写真にマウスオーバーイベントを追加
+                var images = document.querySelectorAll('.responsive-image');
+              
+                images.forEach(function(image) {
+                  image.addEventListener('mouseover', function() {
+                    // マウスオーバー時の処理をここに記述
+                    // 例: 画像の枠に青い光を加える
+                    this.style.boxShadow = '0 0 27px gold';
+                  });
+              
+                  image.addEventListener('mouseout', function() {
+                    // マウスが離れたときの処理をここに記述
+                    // 例: 画像の枠の光を元に戻す
+                    this.style.boxShadow = 'none';
+                  });
+                });
+              </script>
+
+              <section id="section-rekishi">
+                
+                <h1 id="rekishi-h1">歴史/History</h1>
+           
+
+            <p id="rekishi-p2">越前焼の誕生は今から約800年前の平安時代末期に遡ります。<br>
+                元々須恵器を焼いていた地域でしたが、平安時代末期に常滑の技術を導入して焼き締め陶を作り始めました。<br>
+                最初に窯が築かれたのは、現在「越前陶芸村」のある越前町小曽原だったといわれています。壺、甕、すり鉢などの特徴から、<br>
+                初期の越前焼の生産は常滑からこの地まではるばるやって来た陶工の集団が行っていたものと思われます。</p>
+
+              </section>
+
+       
+        
+        </section>
+
+         <section id="section3">
+            <div id="section3-div">
+            <!-- <img id="section3-img" src="./assets/img/Logos that smile _ Logo Design Love.jpeg" alt=""> -->
+            <h1  id="section3-h1">otonarisan</h1>
+            </div>
+            <p class="section3-p">Address:〒859-3702
+                       長崎県東彼杵郡波佐見町
+                       湯無田郷704-1</p>
+                
+            <p class="section3-p">Contact:Tel: 0956-56-7307 Fax: 0956-56-7510</p>
+            <img src="" alt="">
+         </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy;otonarisan.</p>
+    </footer>
+    
+</body>
+</html>

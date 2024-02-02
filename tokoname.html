@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/tokonami.css">
+    <!-- <style>
+        /* スタイルシート */
+        .responsive-image {
+            width: 23vw; /* サムネイルの初期幅 */
+            transition: width 0.3s ease; /* アニメーション効果を追加 */
+        }
+
+        .responsive-image:hover {
+            width: 25vw; /* マウスオーバー時の幅 */
+            height: 59vh;
+        }
+    </style> -->
+    <style>
+        /* スタイルシート */
+        .responsive-image {
+            width: 20vw;
+            height: 42vh; /* サムネイルの初期幅 */
+            transition: width 0.3s ease; /* アニメーション効果を追加 */
+        }
+
+        .responsive-image:hover {
+            width: 22vw; /* マウスオーバー時の幅 */
+            height: 44vh;
+        }
+    </style>
+
+</head>
+
+<body>
+        <header>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <nav class="menu">
+                <ul>
+                  <li id="menu-list"><a href="./index.html">back</a></li>
+                  <li><a href="./etizenkaki.html">Japanese</a></li>
+                  <li><a href="./常滑焼en.html">English</a></li>
+                </ul>
+            </nav>
+            <scrip src="script.js"></script>
+        </header>
+        <header id="header">
+            <h1>otonarisan</h1>
+        </header>
+    <main>
+        <section id="section1">
+           
+            <h1 id="section1-h1">常滑焼/Tokonamiware</h1>
+            
+            <p id="section1-p2">愛知県の知多半島にある常滑市を中心に焼かれる焼き物です。<br>
+                常滑焼の最大の特徴は、知多半島で採れる鉄分を多く含んだ陶土を使用することです。<br>また、基本的に釉薬を掛けない素焼きの陶器として製作されることも特徴の一つです。
+
+                
+                </p>
+        </section>
+
+        
+        
+
+        <section id="section2">
+
+
+            <!-- <div class="goods">
+                <div id="image-container">
+                    <img class="responsive-image" src="./assets/img/越前焼.jpeg" alt="">
+                </div>
+                
+            </div> -->
+
+            
+                
+
+
+            <div class="goods">
+                <div id="image-container">
+                    <img class="responsive-image" id="margin-img" src="./assets/img/常滑焼1.jpeg" alt="">
+                </div>
+                
+            </div>
+
+            <div class="goods">
+                <div id="image-container">
+                    <img class="responsive-image" src="./assets/img/常滑焼2.jpeg" alt="">
+                </div>
+                
+            </div>
+
+            
+
+            <!-- <div class="goods">
+                <div id="image-container">
+                    <img class="responsive-image" src="./assets/img/信楽焼2.jpeg" alt="">
+                </div>
+                
+            </div>
+
+        <section id="section2-1">
+  
+            <div class="goods">
+                <div id="image-container">
+                    <img class="responsive-image" id="margin" src="./assets/img/信楽焼3.jpeg" alt="">
+                </div> -->
+                <!-- <ul class="section2-ul">
+                    <li>Price</li>
+                    <li>Type：信楽焼</li>
+                    <li>Material：炻器</li>
+                    <li>Aria:滋賀県</li>
+                </ul> -->
+            <!-- </div>
+
+            <div class="goods">
+                <div id="image-container">
+                    <img class="responsive-image" src="./assets/img/信楽焼4.jpeg" alt="">
+                </div>
+                
+            </div> -->
+
+        </section>
+            <script>
+                // JavaScriptで全ての写真にマウスオーバーイベントを追加
+                var images = document.querySelectorAll('.responsive-image');
+              
+                images.forEach(function(image) {
+                  image.addEventListener('mouseover', function() {
+                    // マウスオーバー時の処理をここに記述
+                    // 例: 画像の枠に青い光を加える
+                    this.style.boxShadow = '0 0 27px gold';
+                  });
+              
+                  image.addEventListener('mouseout', function() {
+                    // マウスが離れたときの処理をここに記述
+                    // 例: 画像の枠の光を元に戻す
+                    this.style.boxShadow = 'none';
+                  });
+                });
+              </script>
+
+              <section id="section-rekishi">
+            
+                <h1 id="rekishi-h1">歴史/History</h1>
+                
+
+
+            <p id="rekishi-p2">起源は平安末期にまでさかのぼります。古来より大瓶・大壼などの日用雑 器が有名です。<br>
+                桃山時代には茶道具、江戸時代には、この地で産出する鉄分の多い陶土の性質を巧みに生か した朱泥焼や白泥焼、火色焼を作り、今日の基礎が築かれました。
+
+            </p>
+
+              </section>
+
+        </div>
+        
+        </section>
+
+         <section id="section3">
+            <div id="section3-div">
+            <!-- <img id="section3-img" src="./assets/img/Logos that smile _ Logo Design Love.jpeg" alt=""> -->
+            <h1  id="section3-h1">otonarisan</h1>
+            </div>
+            <p class="section3-p">Address:〒859-3702
+                       長崎県東彼杵郡波佐見町
+                       湯無田郷704-1</p>
+                
+            <p class="section3-p">Contact:Tel: 0956-56-7307 Fax: 0956-56-7510</p>
+            <img src="" alt="">
+         </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy;otonarisan.</p>
+    </footer>
+    
+</body>
+</html>

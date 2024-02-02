@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        /* スタイルシート */
+        .responsive-image {
+            width: 23vw; /* サムネイルの初期幅 */
+            transition: width 0.3s ease; /* アニメーション効果を追加 */
+        }
+
+        .responsive-image:hover {
+            width: 25vw; /* マウスオーバー時の幅 */
+            height: 59vh;
+        }
+    </style>
+
+</head>
+
+<body>
+        <header>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <nav class="menu">
+                <ul>
+                  <li><a href="./index.html">Japanese</a></li>
+                  <li><a href="./index2.html">English</a></li>
+                </ul>
+            </nav>
+            <scrip src="script.js"></script>
+        </header>
+        <header id="header">
+            <h1>otonarisan</h1>
+        </header>
+    <main>
+        <section id="section1">
+            <!-- <img id="section1-img" src="./assets/img/Logos that smile _ Logo Design Love.jpeg" alt=""> -->
+            <!-- <h1>六古窯</h1> -->
+            <p id="section1-p">Pottery is one of the Japan's crafts.In Japan,the age of earthenware has continued for a long time since the Jomon earthenware.<br>
+                Sue ware was introduced from Korea in the 5th country,and glaze was introduced from The Dynasty in the 7th century.<br>After that,production began in Japan's six ancient kilns.
+            </p>
+            <!-- <img src="./assets/img/【Homeland（ホームランド）】 信楽焼オーバル皿 20cm - white.jpeg" alt=""> -->
+        </section>
+
+        <section id="section2">
+
+            <div class="goods">
+                <div id="image-container">
+                    <a href="./越前焼en.html">
+                    <img class="responsive-image" src="./assets/img/越前焼.jpeg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div id="section2-div">
+                <h1 id="etizen-h1">E<br>t<br>i<br>z<br>e<br>n
+                </h1>
+
+            </div>
+
+
+            <div class="goods">
+                <div id="image-container">
+                    <a href="./信楽焼en.html">
+                    <img class="responsive-image" src="./assets/img/【Homeland（ホームランド）】 信楽焼 深皿24cm - nezuhagi.jpeg" alt="">
+                    </a>
+                </div>
+               
+            </div>
+
+            <div id="section2-div2">
+                <h1 id="sigara-h1">Shigara</h1>
+            </div>
+
+
+        </section>
+
+        <section id="section3">
+
+            <div id="section3-div1">
+                <h1 id="seto-h1">S<br>e<br>t<br>o</h1>
+            </div>
+
+
+            <div class="goods">
+                <div id="image-container">
+                    <a href="./瀬戸焼en.html">
+                    <img class="responsive-image" src="./assets/img/ceramic japan モデラート_マグカップ(ナチュラル) - 0(free) (2).jpeg" alt=""></P>
+                    </a>
+                </div>
+               
+
+
+            </div>
+
+            <div id="section3-div2">
+                <h1 id="tokoname-h1">Tokoname</h1>
+            </div>
+
+
+            <div class="goods">
+                <div id="image-container">
+                    <a href="./常滑焼en.html">
+                    <img class="responsive-image" src="./assets/img/中川政七商店 塩壷 常滑(しおつぼ_塩壺 保存容器 常滑焼 陶器 日本製 山源陶苑 ソルトポット 塩 さらさら)｜ROOM - 欲しい! に出会える。.jpeg" alt="">
+                    </a>
+                </div>
+              
+            </div>
+
+
+        </section>
+
+        <section id="section4">
+
+
+            <div class="goods">
+                <div id="image-container">
+                    <a href="./丹波焼・丹波立杭焼en.html">
+                    <img class="responsive-image" src="./assets/img/丹波焼 筒描盃.jpeg" alt="">
+                    </a>
+                </div>
+              
+            </div>
+
+            <div id="section4-div">
+                <h1 id="tanba-h1">Tanba</h1>
+            </div>
+            
+            <div class="goods">
+                <div id="image-container">
+                    <a href="./備前焼en.html">
+                    <img class="responsive-image" src="./assets/img/備前焼専門店ならではの質の高い作品をお求めいただけます。 ご自宅用として、また外国人や新築祝いの贈答品として喜ばれております。.jpeg" alt="">
+                    </a>
+                </div>
+         
+            </div>
+
+            <div id="section4-div2">
+                <h1 id="bizen-h1">B<br>i<br>z<br>e<br>n</h1>
+            </div>
+
+
+        </section>
+
+            <script>
+                // JavaScriptで全ての写真にマウスオーバーイベントを追加
+                var images = document.querySelectorAll('.responsive-image');
+              
+                images.forEach(function(image) {
+                  image.addEventListener('mouseover', function() {
+                    // マウスオーバー時の処理をここに記述
+                    // 例: 画像の枠に青い光を加える
+                    this.style.boxShadow = '0 0 27px gold';
+                  });
+              
+                  image.addEventListener('mouseout', function() {
+                    // マウスが離れたときの処理をここに記述
+                    // 例: 画像の枠の光を元に戻す
+                    this.style.boxShadow = 'none';
+                  });
+                });
+              </script>
+
+        </div>
+
+         <section id="section5">
+            <div id="section3-div">
+            <!-- <img id="section3-img" src="./assets/img/Logos that smile _ Logo Design Love.jpeg" alt=""> -->
+            <h1  id="section3-h1">otonarisan</h1>
+            </div>
+            <p class="section3-p">Address:〒859-3702
+                Hasami Town, Higashisonogi District, Nagasaki Prefecture,
+                Yumadago, 704-1</p>
+                
+            <p class="section3-p">Contact:Tel: 0956-56-7307 Fax: 0956-56-7510</p>
+            <img src="" alt="">
+         </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy;otonarisan.</p>
+    </footer>
+    
+</body>
+</html>
