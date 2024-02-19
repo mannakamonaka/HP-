@@ -5,180 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/tanba.css">
-    <!-- <style>
-        /* スタイルシート */
-        .responsive-image {
-            width: 23vw; /* サムネイルの初期幅 */
-            transition: width 0.3s ease; /* アニメーション効果を追加 */
-        }
-
-        .responsive-image:hover {
-            width: 25vw; /* マウスオーバー時の幅 */
-            height: 59vh;
-        }
-    </style> -->
-    <style>
-        /* スタイルシート */
-        .responsive-image {
-            width: 20vw;
-            height: 42vh; /* サムネイルの初期幅 */
-            transition: width 0.3s ease; /* アニメーション効果を追加 */
-        }
-
-        .responsive-image:hover {
-            width: 22vw; /* マウスオーバー時の幅 */
-            height: 44vh;
-        }
-    </style>
-
 </head>
 
 <body>
-        <header>
-            <div class="menu-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-              </div>
-              <nav class="menu">
-                <ul>
-                  <li id="menu-list"><a href="./index.html">back</a></li>
-                  <li><a href="./etizenkaki.html">Japanese</a></li>
-                  <li><a href="./丹波焼・丹波立杭焼en.html">English</a></li>
-                </ul>
-            </nav>
-            <scrip src="script.js"></script>
-        </header>
-        <header id="header">
-            <h1>otonarisan</h1>
-        </header>
+    <header>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="menu">
+          <ul>
+            <li id="menu-back"><a href="./index.html">back</a></li>
+            <li><a href="./tanbayaki.html">Japanese</a></li>
+            <li><a href="./丹波焼・丹波立杭焼en.html">English</a></li>
+          </ul>
+        </nav>
+    </header>
     <main>
-        <section id="section1">
-
-            <h1 id="section1-h1">丹波焼・丹波立杭焼/Tanbayakiware</h1>
-            
-            <p id="section1-p2">兵庫県丹波篠山市今田地区付近で焼かれる陶器で、茶褐色の土肌と素朴な風合いが魅力です。<br>
-                 無骨ながらしっくりと手になじみ、自然な温かさを感じられる陶器です。</p>
+        <section id="otonarisan">
+            <h1>otonarisan</h1>
         </section>
-
-        
-        
-
+        <section id="section1">
+            <h1 id="section1-h1">丹波焼・丹波立杭焼/Tanbayakiware</h1>
+            <p id="section1-p">兵庫県丹波篠山市今田地区付近で焼かれる陶器で、茶褐色の土肌と素朴な風合いが魅力です<br>
+                 無骨ながらしっくりと手になじみ、自然な温かさを感じられる陶器です</p>
+        </section>       
         <section id="section2">
-
-
-            <!-- <div class="goods">
-                <div id="image-container">
-                    <img class="responsive-image" src="./assets/img/越前焼.jpeg" alt="">
-                </div>
-                
-            </div> -->
-
-            
-                
-
-            <div class="goods">
                 <div id="image-container">
                     <img class="responsive-image" id="margin-img" src="./assets/img/丹波立杭焼1.jpeg" alt="">
                 </div>
-                
-            </div>
-
-            <div class="goods">
                 <div id="image-container">
                     <img class="responsive-image" src="./assets/img/丹波立杭焼2.jpeg" alt="">
                 </div>
-                
-            </div>
-
-            <!-- <div class="goods">
-                <div id="image-container">
-                    <img class="responsive-image" src="./assets/img/常滑焼3.jpeg" alt=""></P>
+                <!-- <div id="image-container">
+                    <img class="responsive-image" src="./assets/img/越前焼3.jpeg" alt="">
                 </div>
-                <ul class="section2-ul">
-                    
-            </div> -->
-
-            <!-- <div class="goods">
                 <div id="image-container">
-                    <img class="responsive-image" src="./assets/img/信楽焼2.jpeg" alt="">
-                </div>
-                
-            </div>
-
-        <section id="section2-1">
-  
-            <div class="goods">
-                <div id="image-container">
-                    <img class="responsive-image" id="margin" src="./assets/img/信楽焼3.jpeg" alt="">
+                    <img class="responsive-image" id="margin" src="./assets/img/越前焼4.jpeg" alt="">
                 </div> -->
-                <!-- <ul class="section2-ul">
-                    <li>Price</li>
-                    <li>Type：信楽焼</li>
-                    <li>Material：炻器</li>
-                    <li>Aria:滋賀県</li>
-                </ul> -->
-            <!-- </div>
-
-            <div class="goods">
-                <div id="image-container">
-                    <img class="responsive-image" src="./assets/img/信楽焼4.jpeg" alt="">
-                </div>
-                
-            </div> -->
-
         </section>
-            <script>
-                // JavaScriptで全ての写真にマウスオーバーイベントを追加
-                var images = document.querySelectorAll('.responsive-image');
-              
-                images.forEach(function(image) {
-                  image.addEventListener('mouseover', function() {
-                    // マウスオーバー時の処理をここに記述
-                    // 例: 画像の枠に青い光を加える
-                    this.style.boxShadow = '0 0 27px gold';
-                  });
-              
-                  image.addEventListener('mouseout', function() {
-                    // マウスが離れたときの処理をここに記述
-                    // 例: 画像の枠の光を元に戻す
-                    this.style.boxShadow = 'none';
-                  });
-                });
-              </script>
-
-              <section id="section-rekishi">
-               
-                <h1 id="rekishi-h1">歴史/History</h1>
-                
-
-            <p id="rekishi-p2">その発祥は平安時代の終わりから鎌倉時代の初めと言われています。<br>
-                 丹波焼は大別して穴窯時代と登窯時代とに分けられ、桃山末期までの400年間は穴窯が使用されていましたが、その後の江戸時代初期以降は現在も使われている朝鮮式半地上の「登窯」に代わりました。</p>
-              </section>
-
-        </div>
         
+        <script>
+            // マウスオーバーしたら光をつける
+            var images = document.querySelectorAll('.responsive-image');
+            images.forEach(function(image) {
+              image.addEventListener('mouseover', function() { 
+            
+                this.style.boxShadow = '0 0 27px gold';
+              });
+          
+              image.addEventListener('mouseout', function() {
+                this.style.boxShadow = 'none';
+              });
+            });
+        </script>
+
+        <section id="section-rekishi">
+            <h1 id="rekishi-h1">歴史/History</h1>
+            <p id="rekishi-p">その発祥は平安時代の終わりから鎌倉時代の初めと言われています<br>
+                 丹波焼は大別して穴窯時代と登窯時代とに分けられ、桃山末期までの400年間は穴窯が使用されていましたが、その後の江戸時代初期以降は現在も使われている朝鮮式半地上の「登窯」に代わりました</p>
         </section>
-
-         <section id="section3">
-            <div id="section3-div">
-            <!-- <img id="section3-img" src="./assets/img/Logos that smile _ Logo Design Love.jpeg" alt=""> -->
-            <h1  id="section3-h1">otonarisan</h1>
-            </div>
-            <p class="section3-p">Address:〒859-3702
-                       長崎県東彼杵郡波佐見町
-                       湯無田郷704-1</p>
-                
-            <p class="section3-p">Contact:Tel: 0956-56-7307 Fax: 0956-56-7510</p>
-            <img src="" alt="">
-         </section>
-
-
     </main>
 
     <footer>
-        <p>&copy;otonarisan.</p>
+        <p id="footer-p">&copy;otonarisan.</p>
     </footer>
-    
+    <scrip src="script.js"></script>
 </body>
 </html>

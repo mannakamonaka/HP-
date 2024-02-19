@@ -5,188 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/tokonami.css">
-    <!-- <style>
-        /* スタイルシート */
-        .responsive-image {
-            width: 23vw; /* サムネイルの初期幅 */
-            transition: width 0.3s ease; /* アニメーション効果を追加 */
-        }
-
-        .responsive-image:hover {
-            width: 25vw; /* マウスオーバー時の幅 */
-            height: 59vh;
-        }
-    </style> -->
-    <style>
-        /* スタイルシート */
-        .responsive-image {
-            width: 20vw;
-            height: 42vh; /* サムネイルの初期幅 */
-            transition: width 0.3s ease; /* アニメーション効果を追加 */
-        }
-
-        .responsive-image:hover {
-            width: 22vw; /* マウスオーバー時の幅 */
-            height: 44vh;
-        }
-    </style>
-
 </head>
 
 <body>
-        <header>
-            <div class="menu-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-              </div>
-              <nav class="menu">
-                <ul>
-                  <li id="menu-list"><a href="./index2.html">back</a></li>
-                  <li><a href="./etizenkaki.html">Japanese</a></li>
-                  <li><a href="">English</a></li>
-                </ul>
-            </nav>
-            <scrip src="script.js"></script>
-        </header>
-        <header id="header">
-            <h1>otonarisan</h1>
-        </header>
-    <main>
-        <section id="section1">
-           
-            <h1 id="section1-h1">常滑焼/Tokonamiware</h1>
-            
-            <p id="section1-p2">It is a pottery made mainly in Tokoname City on the Chita Peninsula in Aichi Prefecture. <br>
-                The most distinctive feature of Tokoname ware is the use of china clay, which is rich in iron and is produced on the Chita Peninsula. <br>Another characteristic is that it is basically produced as unglazed pottery without glaze.
-
-                
-                </p>
-        </section>
-
-        
-        
-
-        <section id="section2">
-
-
-            <!-- <div class="goods">
-                <div id="image-container">
-                    <img class="responsive-image" src="./assets/img/越前焼.jpeg" alt="">
-                </div>
-                
-            </div> -->
-
-            
-                
-
-
-            <div class="goods">
-                <div id="image-container">
-                    <img class="responsive-image" id="margin-img" src="./assets/img/常滑焼1.jpeg" alt="">
-                </div>
-                
-            </div>
-
-            <div class="goods">
-                <div id="image-container">
-                    <img class="responsive-image" src="./assets/img/常滑焼2.jpeg" alt="">
-                </div>
-                
-            </div>
-
-            <!-- <div class="goods">
-                <div id="image-container">
-                    <img class="responsive-image" src="./assets/img/常滑焼3.jpeg" alt=""></P>
-                </div>
-                <ul class="section2-ul">
-                    
-            </div> -->
-
-            <!-- <div class="goods">
-                <div id="image-container">
-                    <img class="responsive-image" src="./assets/img/信楽焼2.jpeg" alt="">
-                </div>
-                
-            </div>
-
-        <section id="section2-1">
-  
-            <div class="goods">
-                <div id="image-container">
-                    <img class="responsive-image" id="margin" src="./assets/img/信楽焼3.jpeg" alt="">
-                </div> -->
-                <!-- <ul class="section2-ul">
-                    <li>Price</li>
-                    <li>Type：信楽焼</li>
-                    <li>Material：炻器</li>
-                    <li>Aria:滋賀県</li>
-                </ul> -->
-            <!-- </div>
-
-            <div class="goods">
-                <div id="image-container">
-                    <img class="responsive-image" src="./assets/img/信楽焼4.jpeg" alt="">
-                </div>
-                
-            </div> -->
-
-        </section>
-            <script>
-                // JavaScriptで全ての写真にマウスオーバーイベントを追加
-                var images = document.querySelectorAll('.responsive-image');
-              
-                images.forEach(function(image) {
-                  image.addEventListener('mouseover', function() {
-                    // マウスオーバー時の処理をここに記述
-                    // 例: 画像の枠に青い光を加える
-                    this.style.boxShadow = '0 0 27px gold';
-                  });
-              
-                  image.addEventListener('mouseout', function() {
-                    // マウスが離れたときの処理をここに記述
-                    // 例: 画像の枠の光を元に戻す
-                    this.style.boxShadow = 'none';
-                  });
-                });
-              </script>
-
-              <section id="section-rekishi">
-            
-                <h1 id="rekishi-h1">歴史/History</h1>
-                
-
-
-            <p id="rekishi-p2">Its origins date back to the late Heian period. It has been famous for its daily necessities such as large bottles and large jars since ancient times. <br>
-                In the Momoyama period, tea utensils were created, and in the Edo period, the foundations of today's pottery were laid, such as vermillion ware, white clay ware, and hiroki ware, which skillfully took advantage of the properties of the iron-rich clay produced in this area.
-
-            </p>
-
-              </section>
-
+    <header>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
-        
+        <nav class="menu">
+          <ul>
+            <li id="menu-back"><a href="./index2.html">back</a></li>
+            <li><a href="./tokoname.html">Japanese</a></li>
+            <li><a href="./常滑焼en.html">English</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="otonarisan">
+            <h1>otonarisan</h1>
         </section>
-
-         <section id="section3">
-            <div id="section3-div">
-            <!-- <img id="section3-img" src="./assets/img/Logos that smile _ Logo Design Love.jpeg" alt=""> -->
-            <h1  id="section3-h1">otonarisan</h1>
+        <section id="section1">
+            <h1 id="section1-h1">常滑焼/Tokonamiware</h1>
+            <p id="section1-p">It is a pottery made mainly in Tokoname City on the Chita Peninsula in Aichi Prefecture. <br>
+                The most distinctive feature of Tokoname ware is the use of china clay, which is rich in iron and is produced on the Chita Peninsula. <br>Another characteristic is that it is basically produced as unglazed pottery without glaze.<br>
+            </p>
+        </section>       
+        <section id="section2">
+            <div id="image-container">
+                <img class="responsive-image" id="margin-img" src="./assets/img/常滑焼1.jpeg" alt="">
             </div>
-            <p class="section3-p">Address:〒859-3702
-                Hasami Town, Higashisonogi District, Nagasaki Prefecture,
-                Yumadago, 704-1</p>
-                
-            <p class="section3-p">Contact:Tel: 0956-56-7307 Fax: 0956-56-7510</p>
-            <img src="" alt="">
-         </section>
+            <div id="image-container">
+                <img class="responsive-image" src="./assets/img/常滑焼2.jpeg" alt="">
+            </div>
+            <div id="image-container">
+                <img class="responsive-image" src="./assets/img/常滑焼4.jpeg" alt="">
+            </div>
+            <div id="image-container">
+                <img class="responsive-image" id="margin" src="./assets/img/常滑焼5.jpeg" alt="">
+            </div>
+        </section>
+        
+        <script>
+            // マウスオーバーしたら光をつける
+            var images = document.querySelectorAll('.responsive-image');
+            images.forEach(function(image) {
+              image.addEventListener('mouseover', function() { 
+            
+                this.style.boxShadow = '0 0 27px gold';
+              });
+          
+              image.addEventListener('mouseout', function() {
+                this.style.boxShadow = 'none';
+              });
+            });
+        </script>
 
-
+        <section id="section-rekishi">
+            <h1 id="rekishi-h1">歴史/History</h1>
+            <p id="rekishi-p">Its origins date back to the late Heian period.<br> It has been famous for its daily necessities such as large bottles and large jars since ancient times. <br>
+                In the Momoyama period, tea utensils were created, and in the Edo period, the foundations of today's pottery were laid, such as vermillion ware, white clay ware, and hiroki ware, which skillfully took advantage of the properties of the iron-rich clay produced in this area.<br>
+            </p>
+        </section>
     </main>
 
     <footer>
-        <p>&copy;otonarisan.</p>
+        <p id="footer-p">&copy;otonarisan.</p>
     </footer>
-    
+    <scrip src="script.js"></script>
 </body>
 </html>

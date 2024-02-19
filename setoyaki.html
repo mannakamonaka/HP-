@@ -5,186 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/seto.css">
-    <!-- <style>
-        /* スタイルシート */
-        .responsive-image {
-            width: 23vw; /* サムネイルの初期幅 */
-            transition: width 0.3s ease; /* アニメーション効果を追加 */
-        }
-
-        .responsive-image:hover {
-            width: 25vw; /* マウスオーバー時の幅 */
-            height: 59vh;
-        }
-    </style> -->
-    <style>
-        /* スタイルシート */
-        .responsive-image {
-            width: 20vw;
-            height: 42vh; /* サムネイルの初期幅 */
-            transition: width 0.3s ease; /* アニメーション効果を追加 */
-        }
-
-        .responsive-image:hover {
-            width: 22vw; /* マウスオーバー時の幅 */
-            height: 44vh;
-        }
-    </style>
-
 </head>
 
 <body>
-        <header>
-            <div class="menu-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-              </div>
-              <nav class="menu">
-                <ul>
-                  <li id="menu-list"><a href="./index.html">back</a></li>
-                  <li><a href="./etizenkaki.html">Japanese</a></li>
-                  <li><a href="./瀬戸焼en.html">English</a></li>
-                </ul>
-            </nav>
-            <scrip src="script.js"></script>
-        </header>
-        <header id="header">
-            <h1>otonarisan</h1>
-        </header>
+    <header>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="menu">
+          <ul>
+            <li id="menu-back"><a href="./index.html">back</a></li>
+            <li><a href="./setoyaki.html">Japanese</a></li>
+            <li><a href="./瀬戸焼en.html">English</a></li>
+          </ul>
+        </nav>
+    </header>
     <main>
-        <section id="section1">
-            
-            <h1 id="section1-h1">瀬戸焼/Setoyakiware</h1>
-            
-           
-            <p id="section1-p2">瀬戸焼は、瀬戸層群で採取された木節粘土や蛙目粘土、珪砂などを使用して作られています。<br>
-                陶器は数種類の粘土を、磁器は粘土と石を混ぜて作りますが、粘土や石の配合によって、<br>硬度や色合いが変わるのが特徴です。</p>
+        <section id="otonarisan">
+            <h1>otonarisan</h1>
         </section>
-
-        
-        
-
+        <section id="section1">
+            <h1 id="section1-h1">瀬戸焼/Setoyakiware</h1>
+            <p id="section1-p">瀬戸焼は、瀬戸層群で採取された木節粘土や蛙目粘土、珪砂などを使用して作られています<br>
+                陶器は数種類の粘土を、磁器は粘土と石を混ぜて作りますが、粘土や石の配合によって、硬度や色合いが変わるのが特徴です</p>
+        </section>       
         <section id="section2">
-
-
-            <!-- <div class="goods">
                 <div id="image-container">
-                    <img class="responsive-image" src="./assets/img/越前焼.jpeg" alt="">
+                    <img class="responsive-image" id="seto-img" id="margin-img" src="./assets/img/瀬戸焼.jpeg" alt="">
                 </div>
-                
-            </div> -->
-
-            
-               
-           
-
-
-            <div class="goods">
-                <div id="image-container">
-                    <img class="responsive-image" id="margin-img" src="./assets/img/瀬戸焼.jpeg" alt="">
-                </div>
-                
-            </div>
-
-            <div class="goods">
                 <div id="image-container">
                     <img class="responsive-image" src="./assets/img/瀬戸焼1.jpeg" alt="">
                 </div>
-                
-            </div>
-
-            <div class="goods">
                 <div id="image-container">
-                    <img class="responsive-image" src="./assets/img/瀬戸焼2.jpeg" alt=""></P>
+                    <img class="responsive-image" src="./assets/img/瀬戸焼2.jpeg" alt="">
                 </div>
-                <ul class="section2-ul">
-                    
-            </div>
-
-            <div class="goods">
                 <div id="image-container">
-                    <img class="responsive-image" src="./assets/img/瀬戸焼3.jpeg" alt="">
+                    <img class="responsive-image" id="margin" src="./assets/img/瀬戸焼3.jpeg" alt="">
                 </div>
-                
-            </div>
-
-        <!-- <section id="section2-1">
-  
-            <div class="goods">
-                <div id="image-container">
-                    <img class="responsive-image" id="margin" src="./assets/img/信楽焼3.jpeg" alt="">
-                </div> -->
-                <!-- <ul class="section2-ul">
-                    <li>Price</li>
-                    <li>Type：信楽焼</li>
-                    <li>Material：炻器</li>
-                    <li>Aria:滋賀県</li>
-                </ul> -->
-            <!-- </div>
-
-            <div class="goods">
-                <div id="image-container">
-                    <img class="responsive-image" src="./assets/img/信楽焼4.jpeg" alt="">
-                </div>
-                
-            </div> -->
-
         </section>
-            <script>
-                // JavaScriptで全ての写真にマウスオーバーイベントを追加
-                var images = document.querySelectorAll('.responsive-image');
-              
-                images.forEach(function(image) {
-                  image.addEventListener('mouseover', function() {
-                    // マウスオーバー時の処理をここに記述
-                    // 例: 画像の枠に青い光を加える
-                    this.style.boxShadow = '0 0 27px gold';
-                  });
-              
-                  image.addEventListener('mouseout', function() {
-                    // マウスが離れたときの処理をここに記述
-                    // 例: 画像の枠の光を元に戻す
-                    this.style.boxShadow = 'none';
-                  });
-                });
-              </script>
-
-              <section id="section-rekishi">
-                
-                <h1 id="rekishi-h1">歴史/History</h1>
-                
-           
-
-            <p id="rekishi-p2">鎌倉時代、中国でやきものの技術を学んだ加藤四郎左衛門景正が瀬戸で開窯したことが始まりとされています。<br>
-                平安時代末期からは「古瀬戸」と呼ばれる中国陶磁をモデルとした施釉陶器が生産されるようになり、室町時代まで国内唯一の施釉陶器産地として発展していきました。
-                <br>そして、江戸時代後期には磁器生産も始まりました。陶器も磁器も生産されることが瀬戸焼の特色の一つです。</p>
-
-              </section>
-
-        </div>
         
+        <script>
+            // マウスオーバーしたら光をつける
+            var images = document.querySelectorAll('.responsive-image');
+            images.forEach(function(image) {
+              image.addEventListener('mouseover', function() { 
+            
+                this.style.boxShadow = '0 0 27px gold';
+              });
+          
+              image.addEventListener('mouseout', function() {
+                this.style.boxShadow = 'none';
+              });
+            });
+        </script>
+
+        <section id="section-rekishi">
+            <h1 id="rekishi-h1">歴史/History</h1>
+            <p id="rekishi-p">鎌倉時代、中国でやきものの技術を学んだ加藤四郎左衛門景正が瀬戸で開窯したことが始まりとされています<br>
+                平安時代末期からは「古瀬戸」と呼ばれる中国陶磁をモデルとした施釉陶器が生産されるようになり、室町時代まで国内唯一の施釉陶器産地として発展していきました
+                <br>そして、江戸時代後期には磁器生産も始まりました<br>陶器も磁器も生産されることが瀬戸焼の特色の一つです</p>
         </section>
-
-         <section id="section3">
-            <div id="section3-div">
-            <!-- <img id="section3-img" src="./assets/img/Logos that smile _ Logo Design Love.jpeg" alt=""> -->
-            <h1  id="section3-h1">otonarisan</h1>
-            </div>
-            <p class="section3-p">Address:〒859-3702
-                       長崎県東彼杵郡波佐見町
-                       湯無田郷704-1</p>
-                
-            <p class="section3-p">Contact:Tel: 0956-56-7307 Fax: 0956-56-7510</p>
-            <img src="" alt="">
-         </section>
-
-
     </main>
 
     <footer>
-        <p>&copy;otonarisan.</p>
+        <p id="footer-p">&copy;otonarisan.</p>
     </footer>
-    
+    <scrip src="script.js"></script>
 </body>
 </html>

@@ -5,142 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/etizenyaki.css">
-    <style>
-        /* スタイルシート */
-        .responsive-image {
-            width: 20vw;
-            height: 42vh; /* サムネイルの初期幅 */
-            transition: width 0.3s ease; /* アニメーション効果を追加 */
-        }
-
-        .responsive-image:hover {
-            width: 22vw; /* マウスオーバー時の幅 */
-            height: 44vh;
-        }
-    </style>
 </head>
 
 <body>
-        <header>
-            <div class="menu-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-              </div>
-              <nav class="menu">
-                <ul>
-                  <li id="menu-list"><a href="./index2.html">back</a></li>
-                  <li><a href="./etizenkaki.html">Japanese</a></li>
-                  <li><a href="./越前焼en.html">English</a></li>
-                </ul>
-            </nav>
-            <scrip src="script.js"></script>
-        </header>
-        <header id="header">
-            <h1>otonarisan</h1>
-        </header>
+    <header>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="menu">
+          <ul>
+            <li id="menu-back"><a href="./index2.html">back</a></li>
+            <li><a href="./etizenkaki.html">Japanese</a></li>
+            <li><a href="./越前焼en.html">English</a></li>
+          </ul>
+        </nav>
+    </header>
     <main>
+        <section id="otonarisan">
+            <h1>otonarisan</h1>
+        </section>
         <section id="section1">
             <h1 id="section1-h1">越前焼/Etizen</h1>
-    
-            <p id="section1-p2">Stoneware fired mainly in the Miyazaki and Oda districts of Echizen-cho, Nyu-gun, Fukui Prefecture.<br>
-                Using soil with a high iron content, the skin color varies from black-gray to reddish-brown, and the beautiful yellow-green natural glaze flows down.</p>
-        </section>
-
-        
-        
-
+            <p id="section1-p">Stoneware fired mainly in the Miyazaki and Oda districts of Echizen-cho, Nyu-gun, Fukui Prefecture.<br>
+                Using soil with a high iron content, the skin color varies from black-gray to reddish-brown, and the beautiful yellow-green natural glaze flows down.<br>
+            </p>
+        </section>       
         <section id="section2">
-            <div class="goods">
                 <div id="image-container">
                     <img class="responsive-image" id="margin-img" src="./assets/img/越前焼6.jpeg" alt="">
                 </div>
-            </div>
-
-            <div class="goods">
                 <div id="image-container">
                     <img class="responsive-image" src="./assets/img/越前焼1.jpeg" alt="">
                 </div>
-            </div>
-
-            
-            
-            <div class="goods">
                 <div id="image-container">
                     <img class="responsive-image" src="./assets/img/越前焼3.jpeg" alt="">
                 </div>
-            </div>
-
-        
-  
-            <div class="goods">
                 <div id="image-container">
                     <img class="responsive-image" id="margin" src="./assets/img/越前焼4.jpeg" alt="">
                 </div>
-                <!-- <ul class="section2-ul">
-                    <li>Price</li>
-                    <li>Type：信楽焼</li>
-                    <li>Material：炻器</li>
-                    <li>Aria:滋賀県</li>
-                </ul> -->
-            </div>
-
-            
-
         </section>
-            <script>
-                // JavaScriptで全ての写真にマウスオーバーイベントを追加
-                var images = document.querySelectorAll('.responsive-image');
-              
-                images.forEach(function(image) {
-                  image.addEventListener('mouseover', function() {
-                    // マウスオーバー時の処理をここに記述
-                    // 例: 画像の枠に青い光を加える
-                    this.style.boxShadow = '0 0 27px gold';
-                  });
-              
-                  image.addEventListener('mouseout', function() {
-                    // マウスが離れたときの処理をここに記述
-                    // 例: 画像の枠の光を元に戻す
-                    this.style.boxShadow = 'none';
-                  });
-                });
-              </script>
+        
+        <script>
+            // マウスオーバーしたら光をつける
+            var images = document.querySelectorAll('.responsive-image');
+            images.forEach(function(image) {
+              image.addEventListener('mouseover', function() { 
+            
+                this.style.boxShadow = '0 0 27px gold';
+              });
+          
+              image.addEventListener('mouseout', function() {
+                this.style.boxShadow = 'none';
+              });
+            });
+        </script>
 
-              <section id="section-rekishi">
-                
-                <h1 id="rekishi-h1">歴史/History</h1>
-           
-
-            <p id="rekishi-p2">The birth of Echizen ware dates back to the end of the Heian period about 800 years ago. <br>
+        <section id="section-rekishi">
+            <h1 id="rekishi-h1">歴史/History</h1>
+            <p id="rekishi-p">The birth of Echizen ware dates back to the end of the Heian period about 800 years ago. <br>
                 This area originally produced Sue ware, but at the end of the Heian period, they introduced Tokoname techniques and began making yakijime pottery. <br>
                 It is said that the first kiln was built in Osohara, Echizen Town, where the Echizen Pottery Village is now located. From the characteristics of pots, jars, mortars, etc.<br>
-                It is thought that the early production of Echizen ware was carried out by a group of potters who came all the way from Tokoname to this area. </p>
-              </section>
-
-       
-        
+                It is thought that the early production of Echizen ware was carried out by a group of potters who came all the way from Tokoname to this area. <br>
+            </p>
         </section>
-
-         <section id="section3">
-            <div id="section3-div">
-            <!-- <img id="section3-img" src="./assets/img/Logos that smile _ Logo Design Love.jpeg" alt=""> -->
-            <h1  id="section3-h1">otonarisan</h1>
-            </div>
-            <p class="section3-p">Address:〒859-3702
-                Hasami Town, Higashisonogi District, Nagasaki Prefecture,
-                Yumadago, 704-1</p>
-                
-            <p class="section3-p">Contact:Tel: 0956-56-7307 Fax: 0956-56-7510</p>
-            <img src="" alt="">
-         </section>
-
-
     </main>
 
     <footer>
-        <p>&copy;otonarisan.</p>
+        <p id="footer-p">&copy;otonarisan.</p>
     </footer>
-    
+    <scrip src="script.js"></script>
 </body>
 </html>
